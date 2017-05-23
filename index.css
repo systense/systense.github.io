@@ -1,0 +1,133 @@
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #ACACAC;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+}
+img.vertical {
+  width: auto;
+  height: 100%;
+  max-width: inherit;
+  max-height: 900px;
+}
+.layout {
+  width: 100%;
+}
+nav {
+  width: 15%;
+  padding: 15px;
+}
+nav li {
+  margin-bottom: 15px;
+}
+nav a {
+  color: #ACACAC;
+}
+nav a.active,
+nav a:hover {
+  color: #fff;
+}
+.content {
+
+}
+.details {
+  margin-top: -45px;
+}
+.details .item {
+  margin-bottom: 30px;
+}
+.details .wrapper {
+  display: none;
+
+  padding: 30px;
+  padding-top: 60px;
+}
+.details .wrapper.active {
+  display: block;
+}
+.link-details {
+  display: inline-block;
+  padding-left: 30px;
+}
+.project-slider {
+  height: 100vh;
+  padding: 15px;
+}
+.project-slider li {
+  display: none;
+  margin: 0;
+}
+.project-slider li.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.project-slider .arrows {
+  margin-top: 15px;
+  width: 30%;
+  user-select: none;
+}
+.project-slider .arrows span {
+  cursor: pointer;
+  padding-right: 5px;
+}
+.project-slider img {
+  cursor: pointer;
+}
+@media only screen and (min-width: 1000px) {
+  nav {
+    padding: 30px;
+  }
+  .layout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    max-width: 1600px;
+  }
+  .content {
+    width: 70%;
+  }
+  .project-slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+    padding-bottom: 60px;
+  }
+
+  .project-slider ul,
+  .project-slider li {
+    height: 100%;
+  }
+}
