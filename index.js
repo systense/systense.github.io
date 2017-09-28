@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var current = 0;
     var ul = document.getElementById("project-slider-ul");
     var items = document.querySelectorAll("#project-slider-ul li");
-    // var arrowLeft = document.querySelector(".arrow-left");
-    // var arrowRight = document.querySelector(".arrow-right");
+    var arrowLeft = document.querySelector(".arrow-left");
+    var arrowRight = document.querySelector(".arrow-right");
 
     ul.addEventListener("click", function() {
       if (current == items.length - 1) {
@@ -32,29 +32,29 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 
-    // arrowLeft.addEventListener("click", function() {
-    //   if (current == 0) {
-    //     items[0].classList.remove("active");
-    //     items[items.length - 1].classList.add("active");
-    //     current = items.length - 1;
-    //   } else {
-    //     items[current].classList.remove("active");
-    //     items[current - 1].classList.add("active");
-    //     current = current - 1;
-    //   }
-    // });
+    arrowLeft.addEventListener("click", function() {
+      if (current == 0) {
+        items[0].classList.remove("active");
+        items[items.length - 1].classList.add("active");
+        current = items.length - 1;
+      } else {
+        items[current].classList.remove("active");
+        items[current - 1].classList.add("active");
+        current = current - 1;
+      }
+    });
 
-    // arrowRight.addEventListener("click", function() {
-    //   if (current == items.length - 1) {
-    //     items[current].classList.remove("active");
-    //     items[0].classList.add("active");
-    //     current = 0;
-    //   } else {
-    //     items[current].classList.remove("active");
-    //     items[current + 1].classList.add("active");
-    //     current = current + 1;
-    //   }
-    // });
+    arrowRight.addEventListener("click", function() {
+      if (current == items.length - 1) {
+        items[current].classList.remove("active");
+        items[0].classList.add("active");
+        current = 0;
+      } else {
+        items[current].classList.remove("active");
+        items[current + 1].classList.add("active");
+        current = current + 1;
+      }
+    });
   }
 });
 

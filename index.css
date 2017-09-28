@@ -50,7 +50,7 @@ nav a:hover {
   color: #fff;
 }
 .content {
-
+  position: relative;
 }
 .details {
   margin-top: -45px;
@@ -131,4 +131,22 @@ nav a:hover {
   .project-slider li {
     height: 100%;
   }
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.arrow-left {
+  width: 30%;
+  left: 0;
+  cursor: w-resize;
+}
+
+.arrow-right {
+  width: 70%;
+  right: 0;
+  cursor: e-resize;
 }
