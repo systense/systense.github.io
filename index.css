@@ -54,6 +54,8 @@ nav a:hover {
 }
 .details {
   margin-top: -45px;
+  position: relative;
+  z-index: 2;
 }
 .details .item {
   margin-bottom: 20px;
