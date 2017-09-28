@@ -140,13 +140,13 @@ nav a:hover {
 }
 
 .arrow-left {
-  width: 30%;
+  width: 20%;
   left: 0;
   cursor: w-resize;
 }
 
 .arrow-right {
-  width: 70%;
+  width: 80%;
   right: 0;
   cursor: e-resize;
 }
