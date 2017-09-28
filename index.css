@@ -137,16 +137,15 @@ nav a:hover {
   position: absolute;
   top: 0;
   bottom: 0;
+  width: 50%;
 }
 
 .arrow-left {
-  width: 20%;
   left: 0;
   cursor: w-resize;
 }
 
 .arrow-right {
-  width: 80%;
   right: 0;
   cursor: e-resize;
 }
