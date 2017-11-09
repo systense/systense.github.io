@@ -8,6 +8,7 @@ body {
   color: #ACACAC;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
+  height: 100%;
 }
 * {
   box-sizing: border-box;
