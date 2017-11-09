@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
       var wrapper = document.querySelector(".details .wrapper");
       if (!wrapper.classList.contains("active")) wrapper.classList.add("active");
       setTimeout(function() {
+        console.log(projectSlider.offsetHeight);
         scrollTo(body, projectSlider.offsetHeight, 300);
       }, 300);
     });
