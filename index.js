@@ -1,14 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
   var projectSlider = document.getElementById("project-slider");
   var linkDetails = document.getElementById("link-details");
-  var body = document.querySelector('body');
+  var body = document.documentElement;
 
   if (linkDetails) {
     linkDetails.addEventListener("click", function() {
       var wrapper = document.querySelector(".details .wrapper");
       if (!wrapper.classList.contains("active")) wrapper.classList.add("active");
       setTimeout(function() {
-        console.log(body);
         scrollTo(body, projectSlider.offsetHeight, 300);
       }, 300);
     });
