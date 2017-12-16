@@ -49,10 +49,6 @@ nav a.active,
 nav a:hover {
   color: #fff;
 }
-video {
-  padding: 0 20px;
-  display: block;
-}
 .content {
   position: relative;
 }
