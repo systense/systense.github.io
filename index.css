@@ -169,3 +169,8 @@ nav a:hover {
 .hidden {
   visibility: hidden;
 }
+
+video {
+  padding: 0 20px;
+  display: block;
+}
