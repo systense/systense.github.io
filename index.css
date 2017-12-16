@@ -156,3 +156,20 @@ video {
   right: 0;
   cursor: e-resize;
 }
+
+#trigger {
+  cursor: pointer;
+}
+
+#trigger:hover {
+  color: #fff;
+}
+
+.current {
+  pointer-events: none;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
