@@ -212,6 +212,7 @@ function scrollTo(element, to, duration) {
 function initSlider(element) {
   var current = 0;
   // var ul = this.getElementsByClassName("project-slider-ul");
+  console.log(this);
   console.log(element);
   // console.log(ul);
 
