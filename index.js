@@ -211,8 +211,8 @@ function scrollTo(element, to, duration) {
 
 function initSlider(element) {
   var current = 0;
-  var ul = element.querySelector("project-slider-ul");
-  var items = element.querySelectorAll("#project-slider-ul li");
+  var ul = element.getElementsByClassName("project-slider-ul")[0];
+  var items = element.querySelectorAll("li");
   var arrowLeft = element.querySelector(".arrow-left");
   var arrowRight = element.querySelector(".arrow-right");
 
