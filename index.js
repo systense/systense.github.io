@@ -212,47 +212,43 @@ function scrollTo(element, to, duration) {
 function initSlider(element) {
   var current = 0;
   var ul = element.getElementsByClassName("project-slider-ul");
-  console.log(ul);
-  // console.log(ul);
+  var items = element.querySelectorAll("#project-slider-ul li");
+  var arrowLeft = element.querySelector(".arrow-left");
+  var arrowRight = element.querySelector(".arrow-right");
 
+  ul.addEventListener("click", function() {
+    if (current == items.length - 1) {
+      items[current].classList.remove("active");
+      items[0].classList.add("active");
+      current = 0;
+    } else {
+      items[current].classList.remove("active");
+      items[current + 1].classList.add("active");
+      current = current + 1;
+    }
+  });
 
-  // var items = document.querySelectorAll("#project-slider-ul li");
-  // var arrowLeft = document.querySelector(".arrow-left");
-  // var arrowRight = document.querySelector(".arrow-right");
+  arrowLeft.addEventListener("click", function() {
+    if (current == 0) {
+      items[0].classList.remove("active");
+      items[items.length - 1].classList.add("active");
+      current = items.length - 1;
+    } else {
+      items[current].classList.remove("active");
+      items[current - 1].classList.add("active");
+      current = current - 1;
+    }
+  });
 
-  // ul.addEventListener("click", function() {
-  //   if (current == items.length - 1) {
-  //     items[current].classList.remove("active");
-  //     items[0].classList.add("active");
-  //     current = 0;
-  //   } else {
-  //     items[current].classList.remove("active");
-  //     items[current + 1].classList.add("active");
-  //     current = current + 1;
-  //   }
-  // });
-
-  // arrowLeft.addEventListener("click", function() {
-  //   if (current == 0) {
-  //     items[0].classList.remove("active");
-  //     items[items.length - 1].classList.add("active");
-  //     current = items.length - 1;
-  //   } else {
-  //     items[current].classList.remove("active");
-  //     items[current - 1].classList.add("active");
-  //     current = current - 1;
-  //   }
-  // });
-
-  // arrowRight.addEventListener("click", function() {
-  //   if (current == items.length - 1) {
-  //     items[current].classList.remove("active");
-  //     items[0].classList.add("active");
-  //     current = 0;
-  //   } else {
-  //     items[current].classList.remove("active");
-  //     items[current + 1].classList.add("active");
-  //     current = current + 1;
-  //   }
-  // });
+  arrowRight.addEventListener("click", function() {
+    if (current == items.length - 1) {
+      items[current].classList.remove("active");
+      items[0].classList.add("active");
+      current = 0;
+    } else {
+      items[current].classList.remove("active");
+      items[current + 1].classList.add("active");
+      current = current + 1;
+    }
+  });
 }
