@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var projectSlider = document.querySelector("project-slider");
+  var projectSlider = document.getElementsByClassName("project-slider");
   var linkDetails = document.getElementById("link-details");
   var showMenu = document.getElementById("trigger");
   var secondNav = document.getElementById("secondary-nav");
