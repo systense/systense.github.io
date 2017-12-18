@@ -12,7 +12,11 @@
       <nav class="main-nav">
         <ul>
           <li>
+<<<<<<< HEAD
             <a href="/assembly" class="active">assembly</a>
+=======
+            <div class="current">assembly</div>
+>>>>>>> 38649183092858451213e258a260fb3fbd826b0f
           </li>
           <li>
             <a target="_blank" href="http://instagram.com/systense">artefacts</a>  
@@ -42,10 +46,10 @@
         </ul>
       </nav>
       <div class="content">
-        <div class="arrow arrow-left"></div>
-        <div class="arrow arrow-right"></div>
         <div id="project-slider" class="project-slider">
-          <ul id="project-slider-ul">
+          <div class="arrow arrow-left"></div>
+          <div class="arrow arrow-right"></div>
+          <ul class="project-slider-ul">
             <li class="active">
               <img src="0.jpg" class="vertical">
             </li>
@@ -111,6 +115,12 @@
             </li>
           </ul>
         </div>
+        <script type="text/javascript">
+          document.addEventListener("DOMContentLoaded", function() {
+            var projectSlider = document.getElementById("project-slider");
+            initSlider(projectSlider);
+          });
+        </script>
         <div class="details">
           <span class="link-details" id="link-details">more</span>
           <div class="wrapper">
@@ -124,10 +134,10 @@
         <span>excerpts from printed zine</span>
         </div>
         <div class="content">
-        <div class="arrow arrow-left"></div>
-        <div class="arrow arrow-right"></div>
-        <div id="project-slider" class="project-slider">
-          <ul id="project-slider-ul">
+        <div id="project-slider-2" class="project-slider">
+          <div class="arrow arrow-left"></div>
+          <div class="arrow arrow-right"></div>
+          <ul class="project-slider-ul">
             <li class="active">
               <img src="z1.jpg" class="vertical">
             </li>
@@ -157,6 +167,12 @@
             </li>
           </ul>
         </div>
+        <script type="text/javascript">
+          document.addEventListener("DOMContentLoaded", function() {
+            var projectSlider = document.getElementById("project-slider-2");
+            initSlider(projectSlider);
+          });
+        </script>
       </br>
       </br>
       <div class="txt">
