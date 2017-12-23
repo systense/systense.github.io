@@ -36,7 +36,7 @@ img.vertical {
   width: 100%;
 }
 nav {
-  width: 10%;
+  width: 50%;
   padding: 10px;
 }
 nav li {
@@ -108,6 +108,15 @@ video {
   cursor: pointer;
 }
 @media only screen and (min-width: 1000px) {
+  .fixed-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
   nav {
     padding: 20px;
   }
@@ -120,6 +129,7 @@ video {
   }
   .content {
     width: 80%;
+    margin-left: 20%;
   }
   .project-slider {
     display: -webkit-box;
