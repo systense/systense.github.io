@@ -92,6 +92,7 @@ video {
 .project-slider {
   height: 100vh;
   padding: 10px;
+  position: relative;
 }
 .project-slider li {
   display: none;
@@ -153,6 +154,10 @@ video {
 
     padding: 20px;
     padding-bottom: 60px;
+  }
+
+  .content .project-slider {
+    padding-bottom: 20px;
   }
 
   .project-slider ul,
