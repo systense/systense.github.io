@@ -34,12 +34,12 @@ img.vertical {
 }
 .layout {
   width: 100%;
-  t-webkit-transition: all ease-in-out 10;
-    -moz-transition: all ease-in-out 10;
-    -o-transition: all ease-in-out 10;
-    transition: all ease-in-out 10;
+  t-webkit-transition: opacity ease-in-out 10s;
+    -moz-transition: opacity ease-in-out 10s;
+    -o-transition: opacity ease-in-out 10s;
+    transition: opacity ease-in-out 10s;
 }
-.layout-hidden {
+.layout-hidden .layout {
   opacity: 0;
 }
 nav {
@@ -63,6 +63,13 @@ video {
 #seen {
   padding: 10px;
   cursor: pointer;
+  t-webkit-transition: opacity ease-in-out 10s;
+    -moz-transition: opacity ease-in-out 10s;
+    -o-transition: opacity ease-in-out 10s;
+    transition: opacity ease-in-out 10s;
+}
+.layout-hidden #seen {
+  opacity: 0;
 }
 .content {
   position: relative;

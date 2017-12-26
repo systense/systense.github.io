@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
   var secondNav = document.getElementById("secondary-nav");
   var body = document.documentElement;
   var linkHideAll = document.getElementById("seen");
-  var layout = document.getElementById("layout");
 
   if (showMenu) {
     showMenu.addEventListener("click", function() {
@@ -16,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   if (linkHideAll) {
     linkHideAll.addEventListener("click", function() {
-      if (!layout.classList.contains("layout-hidden")) layout.classList.add("layout-hidden");
+      if (!body.classList.contains("layout-hidden")) body.classList.add("layout-hidden");
     });
   }
 
