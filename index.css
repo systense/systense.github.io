@@ -34,10 +34,10 @@ img.vertical {
 }
 .layout {
   width: 100%;
-  t-webkit-transition: opacity ease-in-out 10s;
-    -moz-transition: opacity ease-in-out 10s;
-    -o-transition: opacity ease-in-out 10s;
-    transition: opacity ease-in-out 10s;
+  t-webkit-transition: opacity ease-in-out 5s;
+    -moz-transition: opacity ease-in-out 5s;
+    -o-transition: opacity ease-in-out 5s;
+    transition: opacity ease-in-out 5s;
 }
 .layout-hidden .layout {
   opacity: 0;
@@ -63,10 +63,10 @@ video {
 #seen {
   padding: 10px;
   cursor: pointer;
-  t-webkit-transition: opacity ease-in-out 10s;
-    -moz-transition: opacity ease-in-out 10s;
-    -o-transition: opacity ease-in-out 10s;
-    transition: opacity ease-in-out 10s;
+  t-webkit-transition: opacity ease-in-out 5s;
+    -moz-transition: opacity ease-in-out 5s;
+    -o-transition: opacity ease-in-out 5s;
+    transition: opacity ease-in-out 5s;
 }
 .layout-hidden #seen {
   opacity: 0;
