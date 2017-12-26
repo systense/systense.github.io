@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   if (linkHideAll) {
     linkHideAll.addEventListener("click", function() {
-      if (!layout.classList.contains("layout-hidden")) layout.classList.remove("layout-hidden");
+      if (!layout.classList.contains("layout-hidden")) layout.classList.add("layout-hidden");
     });
   }
 
