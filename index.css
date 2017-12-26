@@ -34,6 +34,13 @@ img.vertical {
 }
 .layout {
   width: 100%;
+  t-webkit-transition: all ease-in-out 10;
+    -moz-transition: all ease-in-out 10;
+    -o-transition: all ease-in-out 10;
+    transition: all ease-in-out 10;
+}
+.layout-hidden {
+  opacity: 0;
 }
 nav {
   width: 50%;
@@ -56,13 +63,6 @@ video {
 #seen {
   padding: 10px;
   cursor: pointer;
-  t-webkit-transition: all ease-in-out 10;
-    -moz-transition: all ease-in-out 10;
-    -o-transition: all ease-in-out 10;
-    transition: all ease-in-out 10;
-}
-#seen.layout-hidden {
-  opacity: 0;
 }
 .content {
   position: relative;
