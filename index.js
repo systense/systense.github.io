@@ -4,11 +4,19 @@ document.addEventListener("DOMContentLoaded", function() {
   var showMenu = document.getElementById("trigger");
   var secondNav = document.getElementById("secondary-nav");
   var body = document.documentElement;
+  var linkHideAll = document.getElementById("seen");
 
   if (showMenu) {
     showMenu.addEventListener("click", function() {
       if (!showMenu.classList.contains("current")) showMenu.classList.add("current");
       if (secondNav.classList.contains("hidden")) secondNav.classList.remove("hidden");
+    });
+  }
+
+  if (linkHideAll) {
+    linkHideAll.addEventListener("click", function() {
+      var layout = document.querySelector(".layout");
+      if (!layout.classList.contains("layout-hidden")) layout.classList.remove("layout-hidden");
     });
   }
 

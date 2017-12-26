@@ -53,6 +53,17 @@ video {
   padding: 0 20px;
   display: block;
 }
+#seen {
+  padding: 10px;
+  cursor: pointer;
+  t-webkit-transition: all ease-in-out 10;
+    -moz-transition: all ease-in-out 10;
+    -o-transition: all ease-in-out 10;
+    transition: all ease-in-out 10;
+}
+#seen.layout-hidden {
+  opacity: 0;
+}
 .content {
   position: relative;
 }
@@ -147,6 +158,12 @@ video {
   .project-slider ul,
   .project-slider li {
     height: 100%;
+  }
+  #seen {
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
   }
 }
 
