@@ -69,6 +69,7 @@ video {
     -o-transition: opacity ease-in-out 2s;
     transition: opacity ease-in-out 2s;
     font-size: 8px
+    color: #fff
 }
 .layout-hidden #seen {
   opacity: 0;
