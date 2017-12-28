@@ -68,8 +68,8 @@ video {
     -moz-transition: opacity ease-in-out 2s;
     -o-transition: opacity ease-in-out 2s;
     transition: opacity ease-in-out 2s;
-    font-size: 30px
-    color: #ACACAC
+    font-size: 6px;
+    color: #ACACAC;
 }
 .layout-hidden #seen {
   opacity: 0;
