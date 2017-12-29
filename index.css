@@ -70,8 +70,9 @@ video {
     -moz-transition: opacity ease-in-out 2s;
     -o-transition: opacity ease-in-out 2s;
     transition: opacity ease-in-out 2s;
-    font-size: 8px;
-    color: #ACACAC;
+  font-size: 8px;
+  color: #ACACAC;
+  display: block;
 }
 .layout-hidden #seen {
   opacity: 0;
@@ -89,18 +90,11 @@ video {
   margin-bottom: 20px;
 }
 .details .wrapper {
-  display: none;
-
-  padding: 20px;
-  padding-top: 60px;
-}
-.details .wrapper.active {
   display: block;
+  padding: 20px 10px;
 }
 .link-details {
-  display: inline-block;
-  padding-left: 20px;
-  cursor: s-resize;
+  display: none;
 }
 .project-slider {
   height: 100vh;
@@ -182,6 +176,19 @@ video {
   }
   video {
     padding: 0 20px;
+  }
+  .details .wrapper {
+    display: none;
+    padding: 20px;
+    padding-top: 60px;
+  }
+  .details .wrapper.active {
+    display: block;
+  }
+  .link-details {
+    display: inline-block;
+    padding-left: 20px;
+    cursor: s-resize;
   }
 }
 
