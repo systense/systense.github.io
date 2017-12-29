@@ -99,10 +99,11 @@ video {
   position: relative;
 }
 .project-slider li {
-  display: none;
+  display: block;
   margin: 0;
   position: relative;
-  padding-bottom: 100%;
+  // padding-bottom: 100%;
+  margin-bottom: 10px;
 }
 .project-slider li.active {
   display: -webkit-box;
@@ -123,16 +124,17 @@ video {
   padding-right: 5px;
 }
 .project-slider img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  max-width: 100% !important;
-  max-height: 100% !important;
-  width: auto !important;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  // max-width: 100% !important;
+  // max-height: 100% !important;
+  width: 100% !important;
   height: auto !important;
   margin: auto !important;
+  display: block;
 }
 .arrow {
   position: absolute;
@@ -140,6 +142,7 @@ video {
   bottom: 0;
   width: 50%;
   z-index: 9;
+  display: none;
 }
 
 .arrow:after {
