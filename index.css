@@ -100,6 +100,7 @@ video {
 }
 .project-slider li {
   display: block;
+  margin-bottom: 10px;
 }
 .project-slider img {
   max-width: 100% !important;
