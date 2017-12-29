@@ -99,6 +99,7 @@ video {
   display: none;
   margin: 0;
   position: relative;
+  padding-bottom: 70%;
 }
 .project-slider li.active {
   display: -webkit-box;
@@ -119,7 +120,16 @@ video {
   padding-right: 5px;
 }
 .project-slider img {
-  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  margin: auto !important;
 }
 @media only screen and (min-width: 1000px) {
   .fixed-nav {
@@ -147,23 +157,10 @@ video {
     padding: 20px 20px 0;
     height: calc(100vh - 54px);
   }
-
   .project-slider ul,
   .project-slider li {
-    height: 100%;
     height: calc(100vh - 74px);
-  }
-  .project-slider img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    max-width: 100% !important;
-    max-height: 100% !important;
-    width: auto !important;
-    height: auto !important;
-    margin: auto !important;
+    padding-bottom: 0;
   }
   #seen {
     padding: 20px;
