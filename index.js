@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     linkDetails.addEventListener("click", function() {
       var wrapper = document.querySelector(".details .wrapper");
       if (!wrapper.classList.contains("active")) wrapper.classList.add("active");
-      scrollTo(body, projectSlider.offsetHeight + 56, 300);
+      scrollTo(body, projectSlider.offsetHeight + 59, 300);
     });
   }
 });
