@@ -27,10 +27,7 @@ img {
   max-width: 1200px;
 }
 img.vertical {
-  width: auto;
-  height: 100%;
-  max-width: inherit;
-  max-height: 720px;
+  width: 100%;
 }
 .layout {
   width: 100%;
