@@ -81,17 +81,12 @@ video {
 .content {
   position: relative;
 }
-.details {
-  margin-top: -45px;
-  position: relative;
-  z-index: 2;
-}
 .details .item {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .details .wrapper {
   display: block;
-  padding: 20px 10px;
+  padding: 10px;
 }
 .link-details {
   display: none;
@@ -189,6 +184,14 @@ video {
     display: inline-block;
     padding-left: 20px;
     cursor: s-resize;
+  }
+  .details {
+    margin-top: -45px;
+    position: relative;
+    z-index: 2;
+  }
+  .details .item {
+    margin-bottom: 20px;
   }
 }
 
