@@ -99,7 +99,7 @@ video {
   display: none;
   margin: 0;
   position: relative;
-  padding-bottom: 70%;
+  padding-bottom: 100%;
 }
 .project-slider li.active {
   display: -webkit-box;
