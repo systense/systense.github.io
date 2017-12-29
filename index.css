@@ -168,6 +168,7 @@ video {
 .arrow-right:after {
   right: 20px;
   content: "→";
+  text-align: right;
 }
 .arrows-hidden .arrow:after {
   display: none;
