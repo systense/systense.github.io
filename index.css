@@ -177,7 +177,7 @@ video {
   .details .wrapper {
     display: none;
     padding: 20px;
-    padding-top: 60px;
+    padding-top: 40px;
   }
   .details .wrapper.active {
     display: block;
