@@ -100,80 +100,13 @@ video {
 }
 .project-slider li {
   display: block;
-  margin: 0;
-  position: relative;
-  // padding-bottom: 100%;
-  margin-bottom: 10px;
-}
-.project-slider li.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  justify-content: center;
-}
-.project-slider .arrows {
-  margin-top: 10px;
-  width: 30%;
-  user-select: none;
-}
-.project-slider .arrows span {
-  cursor: pointer;
-  padding-right: 5px;
 }
 .project-slider img {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // right: 0;
-  // bottom: 0;
-  // max-width: 100% !important;
-  // max-height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
   width: 100% !important;
   height: auto !important;
-  margin: auto !important;
   display: block;
-}
-.arrow {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  z-index: 9;
-  display: none;
-}
-
-.arrow:after {
-  font-family: Verdana,sans-serif;
-  position: absolute;
-  top: 50%;
-  margin-top: -8px;
-  color: #fff;
-  left: 20px;
-}
-
-.arrow-left {
-  left: 0;
-  cursor: w-resize;
-}
-
-.arrow-left:after {
-  left: 20px;
-  content: "←";
-}
-.arrow-right {
-  right: 0;
-  cursor: e-resize;
-}
-.arrow-right:after {
-  right: 20px;
-  content: "→";
-  text-align: right;
-}
-.arrows-hidden .arrow:after {
-  display: none;
 }
 @media only screen and (min-width: 1000px) {
   .fixed-nav {
@@ -204,10 +137,50 @@ video {
     padding: 20px 20px 0;
     height: calc(100vh - 54px);
   }
+  .project-slider li {
+    display: none;
+    margin: 0;
+    position: relative;
+  }
+  .project-slider li.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+  }
   .project-slider ul,
   .project-slider li {
     height: calc(100vh - 74px);
-    padding-bottom: 0;
+  }
+  .project-slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin: auto !important;
+  }
+  .arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 9;
+  }
+  .arrow-left {
+    left: 0;
+    cursor: w-resize;
+  }
+  .arrow-right {
+    right: 0;
+    cursor: e-resize;
   }
   #seen {
     padding: 20px;
@@ -242,9 +215,6 @@ video {
   img.vertical {
       max-height: 90vh;
       width: auto;
-  }
-  .arrow:after {
-    display: none;
   }
 }
 

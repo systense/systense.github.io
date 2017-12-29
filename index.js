@@ -36,23 +36,9 @@ function scrollTo(element, to, duration) {
 
 function initSlider(element) {
   var current = 0;
-  var ul = element.getElementsByClassName("project-slider-ul")[0];
   var items = element.querySelectorAll("li");
   var arrowLeft = element.querySelector(".arrow-left");
   var arrowRight = element.querySelector(".arrow-right");
-
-  ul.addEventListener("click", function() {
-    if (current == items.length - 1) {
-      items[current].classList.remove("active");
-      items[0].classList.add("active");
-      current = 0;
-    } else {
-      items[current].classList.remove("active");
-      items[current + 1].classList.add("active");
-      current = current + 1;
-    }
-    if (!element.classList.contains("arrows-hidden")) element.classList.add("arrows-hidden");
-  });
 
   arrowLeft.addEventListener("click", function() {
     if (current == 0) {
