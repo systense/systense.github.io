@@ -51,6 +51,7 @@ function initSlider(element) {
       items[current + 1].classList.add("active");
       current = current + 1;
     }
+    if (!element.classList.contains("arrows-hidden")) element.classList.add("arrows-hidden");
   });
 
   arrowLeft.addEventListener("click", function() {
@@ -63,6 +64,7 @@ function initSlider(element) {
       items[current - 1].classList.add("active");
       current = current - 1;
     }
+    if (!element.classList.contains("arrows-hidden")) element.classList.add("arrows-hidden");
   });
 
   arrowRight.addEventListener("click", function() {
@@ -75,5 +77,6 @@ function initSlider(element) {
       items[current + 1].classList.add("active");
       current = current + 1;
     }
+    if (!element.classList.contains("arrows-hidden")) element.classList.add("arrows-hidden");
   });
 }
