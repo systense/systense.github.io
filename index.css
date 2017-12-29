@@ -143,7 +143,6 @@ video {
 }
 
 .arrow:after {
-  font-weight: bold;
   font-family: Verdana,sans-serif;
   position: absolute;
   top: 50%;
