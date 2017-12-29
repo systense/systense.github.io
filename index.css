@@ -50,7 +50,10 @@ nav {
   padding: 10px;
 }
 nav li {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
+}
+nav li:last-child {
+  margin-bottom: 0 !important;
 }
 nav a {
   color: #ACACAC;
@@ -140,6 +143,9 @@ video {
   }
   nav {
     padding: 20px;
+  }
+  nav li {
+    margin-bottom: 10px;
   }
   .layout {
     display: -webkit-box;
