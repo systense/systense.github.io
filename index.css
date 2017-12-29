@@ -86,7 +86,7 @@ video {
 }
 .details .wrapper {
   display: block;
-  padding: 10px;
+  padding: 10px 10px 25px;
 }
 .link-details {
   display: none;
@@ -192,6 +192,10 @@ video {
   }
   .details .item {
     margin-bottom: 20px;
+  }
+  img.vertical {
+      max-height: 100vh;
+      width: auto;
   }
 }
 
