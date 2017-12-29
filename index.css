@@ -197,6 +197,9 @@ video {
       max-height: 100vh;
       width: auto;
   }
+  .wrapper img.vertical {
+      max-height: 90vh;
+  }
 }
 
 .arrow {
